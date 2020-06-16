@@ -1,0 +1,39 @@
+#+TITLE: OrgMark
+
+With OrgMark, you can use iPad to draw figures and insert them into Org files. You can also edit these figures later.
+
+[[https://youtu.be/5gkF93KJ_f4][YouTube demo]]
+
+[[./icon/icon.png]]
+
+* Install
+1. Open the workspace with Xcode, you will see two projects, Build Org Mark for iPad and orgmark for Mac. 
+2. Put the orgmark executable under PATH. 
+3. Install the Org Mark app to your iPad (by whatever means).
+4. Put orgmark.el under your ~load-path~ and require it.
+
+* Usage
+From Org mode: =M-x orgmark-insert=, or =M-x orgmark-edit=.
+
+Alternately, you can use orgmark from command line. The extension has to be “pkdrawing”.
+#+begin_example
+$ orgmark --help
+OVERVIEW: Send drawing to iPad to edit.
+
+USAGE: command <file-path> [--width <width>] [--height <height>] [--new]
+
+ARGUMENTS:
+  <file-path>             The drawing file. If --new option is set, this is the file that we save to.
+
+OPTIONS:
+  -w, --width <width>     Max width of the exported image in pixels.
+  -h, --height <height>   Max height of the exported image in pixels.
+  -n, --new               Create new drawing.
+  -h, --help              Show help information.
+#+end_example
+
+* Known problems
+
+- Only support pkdrawing files (which is an extension I made up for storing Apple’s PencilKit binary drawing data).
+- Crashes and hangs, this is really just a quick hack on top of existing solutions (PencilKit).
+- Only works on WiFi. I tried with BLE, but the bandwidth is too low for the data we are transferring.
