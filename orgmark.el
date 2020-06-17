@@ -10,7 +10,6 @@
 ;;; Code:
 ;;
 
-(require 'org-download)
 (require 'cl-lib)
 (require 'pcase)
 
