@@ -32,6 +32,13 @@ OPTIONS:
   -h, --help              Show help information.
 #+end_example
 
+* How does it work
+1. Draw on iPad and iPad saves the drawing to a binary data.
+2. iPad sends the data and a generated png file to cli. 
+3. Cli sends the binary data to iPad for edit, iPad sends the edited binary data and png to cli.
+
+A better way would be using an open drawing library, so we can export the drawing to some open formats, like SVG. I just went with the most trivial route.
+
 * Known problems
 
 - Only support pkdrawing files (which is an extension I made up for storing Apple’s PencilKit binary drawing data).
