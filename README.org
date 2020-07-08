@@ -1,6 +1,6 @@
 #+TITLE: OrgMark
 
-With OrgMark, you can use iPad to draw figures and insert them into Org files. You can also edit these figures later.
+With OrgMark, you can use iPad to draw figures and insert them into Org files. You can also edit these figures later. I find it to be extremely handy for producing documents that mix LaTex and hand-drawn figures.
 
 [[https://youtu.be/5gkF93KJ_f4][YouTube demo]]
 
@@ -40,7 +40,5 @@ OPTIONS:
 A better way would be using an open drawing library, so we can export the drawing to some open formats, like SVG. I just went with the most trivial route.
 
 * Known problems
-
-- Only support pkdrawing files (which is an extension I made up for storing Apple’s PencilKit binary drawing data).
-- Crashes and hangs, this is really just a quick hack on top of existing solutions (PencilKit).
+- Only support pkdrawing files (which is an extension I made up for storing Apple’s PencilKit binary drawing data). Update: Apple released API’s to it’s PKDrawing data structure, so this shouldn’t be a problem anymore. Although there is no one-line “export to SVG” feature, you can write some code to extract the stroke, speed, pressure, etc.
 - Only works on WiFi. I tried with BLE, but the bandwidth is too low for the data we are transferring.
