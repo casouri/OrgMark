@@ -1,3 +1,4 @@
 .DS_Store
 
-/Org\ Mark.xcworkspace/xcuserdata
+/OrgMark.xcworkspace/xcuserdata
+**/xcuserdata
