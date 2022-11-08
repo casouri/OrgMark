@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "cocoaasyncsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robbiehanson/CocoaAsyncSocket",
+      "state" : {
+        "revision" : "dbdc00669c1ced63b27c3c5f052ee4d28f10150c",
+        "version" : "7.6.5"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "3d79b2b5a2e5af52c14e462044702ea7728f5770",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-image",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/koher/swift-image.git",
+      "state" : {
+        "revision" : "c61b8cf4613a7fc80d1c2a84231cef2909e837a1",
+        "version" : "0.7.1"
+      }
+    }
+  ],
+  "version" : 2
+}
